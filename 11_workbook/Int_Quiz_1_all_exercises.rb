@@ -238,6 +238,7 @@ end
 
 puts "-- solution --"
 
+# This is using a monkey
 
 class String
   def short_version(length)

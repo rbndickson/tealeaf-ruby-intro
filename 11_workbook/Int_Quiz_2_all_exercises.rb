@@ -28,7 +28,7 @@ munsters.each do |key, value|
 end
 puts total_male_age
 
-puts "----- Q2 -----"
+puts "----- Q2 -----" # This question was later removed
 # 2. Augment the following hash such that it has additional key value
 #    pairs that can act as a "sort index" which will allow us to quickly
 #    re-arrange a list of our family members as either sorted by name-length
@@ -104,8 +104,8 @@ my_string = "pumpkins"
 my_array = ["pumpkins"]
 tricky_method(my_string, my_array)
 
-puts "My string looks like this now: #{my_string}"
-puts "My array looks like this now: #{my_array}"
+puts "My string looks like this now: #{my_string}"  # pumpkins
+puts "My array looks like this now: #{my_array}" # ["pumpkins", "rutabega"]
 
 #    We learned that when the above "coincidentally" does what we think
 #    we wanted "depends" upon what is going on inside the method.
@@ -119,14 +119,13 @@ my_array = ["pumpkins"]
 def not_so_tricky_method(a_string_param, an_array_param)
   a_string_param += "rutabega"
   an_array_param += ["rutabega"]
-
   return a_string_param, an_array_param
 end
 
 a_string_param, an_array_param = not_so_tricky_method(my_string, my_array)
 
-puts "My string looks like this now: #{my_string}"
-puts "My array looks like this now: #{my_array}"
+puts "My string looks like this now: #{my_string}" # pumpkins
+puts "My array looks like this now: #{my_array}" # ["pumpkins"]
 
 #    So in the non tricky one the original array is unchanged
 
